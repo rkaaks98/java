@@ -1,4 +1,4 @@
-package cho4.sec03;
+package ch04.sec03;
 
 /*
  * 김준서 교재 121
