@@ -10,13 +10,13 @@ public static void main(String[] args) {
 		
 		System.out.print("");
 		
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		int c = sc.nextInt();
+		long a = sc.nextLong();
+		long b = sc.nextLong();
+		long c = sc.nextLong();
 		
-		System.out.println(a+b+c);
+		System.out.print(a+b+c);
 		
-		sc.close();
+		
 	}
 
 }
