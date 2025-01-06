@@ -1,4 +1,4 @@
-package sh03.sec02;
+package ch03.sec02;
 
 /*
  * 김준서 교재 84
