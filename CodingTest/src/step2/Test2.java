@@ -7,20 +7,20 @@ public class Test2 {
 		Scanner sc = new Scanner(System.in);
 		
 		int a = sc.nextInt();
-		System.out.println(" ");
+		System.out.print("");
 		
 		if (a >=90 && a <=100) {
-			System.out.println("A");
+			System.out.print("A");
 		}else if (a >=80 && a <=89) {
-			System.out.println("B");
+			System.out.print("B");
 	    }else if (a >=70 && a <=79) {
-			System.out.println("C");
+			System.out.print("C");
 	    }else if (a >=60 && a <=69) {
-			System.out.println("D");
+			System.out.print("D");
 	    }else if (a >=0 && a < 60) {
-			System.out.println("F");
+			System.out.print("F");
 	    }else {
-	    	System.out.println("");
+	    	System.out.print("");
 	    }
-
+	}
 }
