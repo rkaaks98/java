@@ -46,27 +46,39 @@ public class PolyTest {
 		shark.hunt();
 		
 		//타입 비교연산
-		if(a1 instanceof Tiger) {	
+		if(a1 instanceof Tiger) {		
 			
 			System.out.println("a1은 Tiger 입니다.");	
-			
-		}else if(a2 instanceof Eagle) {
+		}else if(a2 instanceof Eagle) {	
 			
 			System.out.println("a2는 Eagle 입니다.");
-			
-		}else if(a2 instanceof Shark) {
+		}else if(a3 instanceof Shark) {	
 			
 			System.out.println("a3는 Shark 입니다.");
-			
 		}
 		
 		//다형성을 활용한 객체 배열
 		
 		Animal arr[] = {tiger, eagle, shark};
+		
 		arr[0].move();
 		arr[1].move();
 		arr[2].move();
+		
+		
+		
+		Pet dog = new Dog();
+		Pet cat = new Cat();
+		
+		printSound(dog);
+		printSound(cat);
+		
+		
 	}	
+	public static void printSound(Pet pet) {
+		pet.makeSound();
+		
+	}
 }
 
 
