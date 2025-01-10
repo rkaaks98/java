@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Test04 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		sc.nextLine();
+		
 		
 		System.out.print("점수 입력 : ");
 		int score = sc.nextInt();
