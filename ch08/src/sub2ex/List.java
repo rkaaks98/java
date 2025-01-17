@@ -15,6 +15,9 @@ public class List {
 		list.add(4);
 		list.add(5);
 		System.out.println(list);
+		
+		list.add(1,6);
+		System.out.println(list);
 	}
 
 }
