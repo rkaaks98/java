@@ -1,6 +1,6 @@
-package ch08.sec05;
+package ch08.sec06;
 //355
-public class Audio implements RemoteControl {
+public class Television implements RemoteControl {
 	
 	//필드
 	
@@ -9,13 +9,13 @@ public class Audio implements RemoteControl {
 	//turnOn() 추상 메소드 오버라이딩
 	@Override
 	public void turnOn() {
-		System.out.println("Audio를 켭니다.");
+		System.out.println("Television 을 켭니다.");
 	}
 	
 	//turnOff() 추상 메소드 오버라이딩
 	@Override
 	public void turnOff() {
-		System.out.println("Audio를 끕니다.");
+		System.out.println("Television 을 끕니다.");
 	}
 	
 	//setVolume() 추상 메소드 오버라이딩
@@ -28,7 +28,7 @@ public class Audio implements RemoteControl {
 		}else {
 			this.volume = volume;
 		}
-		System.out.println("현재 Audio 볼륨 : " + volume);
+		System.out.println("현재 Television 볼륨 : " + volume);
 		
 	}
 	

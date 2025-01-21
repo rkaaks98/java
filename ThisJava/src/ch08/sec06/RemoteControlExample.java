@@ -1,6 +1,5 @@
-package ch08.sec05;
-
-
+package ch08.sec06;
+//359
 public class RemoteControlExample {
 	
 	public static void main(String[] args) {
@@ -12,21 +11,34 @@ public class RemoteControlExample {
 		
 		rc = new Television();
 		rc.turnOn();
-		rc.setVolume(2);
+		rc.setVolume(5);
+		
+		//디폴트 메소드 호출
 		
 		rc.setMute(true);
 		rc.setMute(false);
 		
+		
+		System.out.println();
+		
+		
+		//Audio 객체를 생성하고 인터페이스 변수에 대입
 		
 		rc = new Audio();
 		rc.turnOn();
 		rc.setVolume(5);
 		
-		
 		//디폴트 메소드 호출
+		
 		rc.setMute(true);
 		rc.setMute(false);
+		
+		
+		System.out.println();
+		
+		//정적 메소드 호출
+		
+		RemoteControl.changeBattery();
 	}
-
 
 }

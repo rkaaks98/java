@@ -1,5 +1,5 @@
-package ch08.sec05;
-//355
+package ch08.sec06;
+//359
 public interface RemoteControl {
 	
 	//상수 필드
@@ -13,6 +13,7 @@ public interface RemoteControl {
 	void turnOff();
 	void setVolume(int volume);
 	
+	//디폴트 메소드
 	
 	default void setMute(boolean mute) {
 		if(mute) {
@@ -23,5 +24,23 @@ public interface RemoteControl {
 			System.out.println("무음 해제합니다.");
 		}
 	}
-
+	
+	//정적 메소드
+	static void changeBattery() {
+		System.out.println("리모콘 건전지를 교환합니다.");
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
