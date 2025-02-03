@@ -39,11 +39,12 @@ public class AppMain {
 		Scanner sc = new Scanner(System.in);
 		
 		boolean isRunning = true;
+		Customer loginedCustomer = null;
 		
 		while(isRunning) {
 			System.out.println("========== Shop 미니 프로젝트 ==========");
 			System.out.println("0:종료, 1:회원관리, 2:상품관리, 3:주문관리");
-			System.out.println("선택 : ");
+			System.out.print("선택 : ");
 			
 			int answer = sc.nextInt();
 			
@@ -52,6 +53,7 @@ public class AppMain {
 				break;
 			case 1:
 				//회원관리
+				loginedCustomer = customerController.manage(sc);
 				break;
 			case 2:
 				//상품관리
@@ -60,7 +62,7 @@ public class AppMain {
 				//주문관리
 				break;
 			default :
-				System.out.println("다시 선색하세요.");
+				System.out.println("다시 선택하세요.");
 				break;
 			}
 		}

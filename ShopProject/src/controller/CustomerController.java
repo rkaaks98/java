@@ -1,5 +1,6 @@
 package controller;
 
+
 import java.util.Scanner;
 
 import entity.Customer;
@@ -33,8 +34,19 @@ public class CustomerController {
 			
 			switch(choice) {
 			case 0:
+				// 메인 이동
 				return loginedCustomer;
 			case 1:
+				
+				if(loginedCustomer == null) {
+					//회원가입
+					Customer inputCustomer = inputCustomer(sc);
+					service.registerCustomer(inputCustomer);
+				}else {
+						//나의정보
+						System.out.println(loginedCustomer);
+				}
+				
 				break;
 			case 2:
 				break;
@@ -46,6 +58,24 @@ public class CustomerController {
 			}
 		}
 		
+	}
+
+	private Customer inputCustomer(Scanner sc) {
+		sc.nextLine();
+		System.out.print("아이디 : ");
+		String custId = sc.nextLine();
+		
+		System.out.print("이름 : ");
+		String name = sc.nextLine();
+		
+		System.out.print("휴대폰 : ");
+		String hp = sc.nextLine();
+		
+		System.out.print("주소 : ");
+		String addr = sc.nextLine();
+		
+		
+		return new Customer(custId, name, hp, addr);
 	}
 	
 	

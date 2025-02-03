@@ -17,7 +17,12 @@ public class Customer {
 		this.addr = addr;
 		this.rdate = rdate;
 	}
-
+	public Customer(String custId, String name, String hp, String addr) {
+		this.custId = custId;
+		this.name = name;
+		this.hp = hp;
+		this.addr = addr;
+	}
 	public String getCustId() {
 		return custId;
 	}
